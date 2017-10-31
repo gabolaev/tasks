@@ -9,7 +9,7 @@
 #include <stdlib.h>
 #include <memory.h>
 
-#define SUCCES "Скобки расставлены правильно!"
+#define SUCCESS "Скобки расставлены правильно!"
 #define FAIL "Скобки расставлены неправильно!"
 
 struct Stack {
@@ -136,7 +136,7 @@ int main(int argc, char* argv[]) {
         check_file(file, &a, &isCorrect);
 
         if ((stack_get_top(&a) == -1) && (isCorrect == 0)) // is stack empty?
-            printf("%s\n", SUCCES);
+            printf("%s\n", SUCCESS);
         else
             printf("%s\n", FAIL);
     }
